@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Hadoop-2.7.2安装教程!
-tags: 大数据
+tags: 大数据 hadoop
 stickie: true
 ---
 
-#  Hadoop-2.7.2安装教程
+
 主要参考:
 [Hadoop2.7.2之集群搭建（高可用）](http://blog.csdn.net/uq_jin/article/details/51513307)、[Hadoop2.7.2之集群搭建（三台）](http://blog.csdn.net/uq_jin/article/details/51487439)
 
 ### 1、安装JDK
 ### 2、配置免密登录
 确认系统已经安装了SSH
-~~~
+~~~sh
 rpm –qa | grep openssh
 rpm –qa | grep rsync
 yum install ssh -->安装SSH协议
@@ -20,27 +20,27 @@ yum install rsync -->rsync是一个远程数据同步工具，可通过LAN/WAN�
 service sshd restart -->启动服务
 ~~~
 生成秘钥对
-~~~
+~~~sh
 ssh-keygen –t rsa –P '' 
 -->直接回车生成的密钥对：id_rsa和id_rsa.pub，默认存储在"/root/.ssh"目录下
 ~~~
 把id_rsa.pub追加到授权的key里面去
-~~~
+~~~sh
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ~~~
 修改授权key的权限
-~~~
+~~~sh
 chmod 600 ~/.ssh/authorized_keys
 ~~~
 待参考方法
-~~~
+~~~sh
 ssh-copy-id master
 ssh-copy-id slave1
 ssh-copy-id slave2
 ~~~
 
 ### 3、配置环境变量
-~~~
+~~~sh
 # vi ~/.bashrc
 #export HIVE_HOME=/usr/local/hive
 #export PATH=$HIVE_HOME/bin:$PATH

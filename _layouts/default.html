@@ -27,14 +27,14 @@
       <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
     {% endif %}
     <meta name="keywords" itemprop="keywords" content="{{ site.keywords | escape }}">
-    <link rel="shortcut icon" sizes="128x128" href="http://{{ site.url }}{{ site.baseurl }}/avatar/favicon.png">
+    <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}{{ site.baseurl }}/avatar/favicon.png">
     <meta name="robots" content="noarchive">
 
    {% comment %}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>{% endcomment %}
     {% include style.html %}
-    <link rel="stylesheet" href="http://{{ site.url }}{{ site.baseurl }}/assets/css/style.css">
-    <link rel="stylesheet" href="http://{{ site.url }}{{ site.baseurl }}/assets/css/fade.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/fade.css">
   </head>
   <body>
 
@@ -47,10 +47,10 @@
       {% assign page-tagline = page.tagline | escape %}
     {% endif %}
     {% if page.layout == 'post' %}
-      {% assign page-tagline = page.tagline | escape  %}
+      {% assign page-tagline = page.tagline | escape %}
     {% endif %}
     {% if page.layout == 'tags' %}
-      {% assign page-tagline = page.tagline | escape  %}
+      {% assign page-tagline = page.tagline | escape %}
     {% endif %}
     <script>
       var OriginTitile = document.title;
@@ -91,8 +91,8 @@
       {{ content }}
 
       <footer class="site-footer">
-        <span class="site-footer-owner">Originate from <a href="http://tommyhot.cn">Tommyhot</a>.</span>
-        <span class="site-footer-credits">This page was made by<a href="https://github.com/tommyhot"> H₂</a>.</span><br>
+        <span class="site-footer-owner">Originate from <a href="http://tommyhot.cn">Tommy</a>.</span>
+        <span class="site-footer-credits">This page was made by<a href="https://github.com/tommyhot"> Tommy</a>.</span><br>
         <span class="site-footer-credits" style="font-size:12px">Already <span id="sitetime"></span> days.</span>
         {% comment %} Gh icon
         <span class="my-span-icon">
