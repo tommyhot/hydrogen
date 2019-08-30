@@ -10,11 +10,11 @@ permalink: /about.html
 
 你可以通过以下方式联系作者
 
-QQ: 1316341442
+QQ: 10409051
 
-Email: <a href="mailto:lk@atlinker.cn">lk@atlinker.cn</a>
+Email: <a href="mailto:tommyhot@126.com">tommyhot@126.com</a>
 
-Github: [link9596](https://github.com/link9596)
+Github: [tommyhot](https://github.com/tommyhot)
 
 ## #捐助我
 
@@ -22,6 +22,6 @@ Github: [link9596](https://github.com/link9596)
 
 <center>扫下方付款二维码即可向作者捐赠!</center>
 
-![wechat](https://atlinker.cn/pay/wechat.png)
+![wechat](http://tommyhot.cn/pay/wechat.jpg)
 
-![pay](https://atlinker.cn/pay/apay.png)
+![pay](http://tommyhot.cn/pay/alipay.jpg)
