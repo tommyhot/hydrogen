@@ -69,17 +69,18 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
         var data = document.getElementById("data-ipt").value;//明文
         var key  =  document.getElementById("data-pwd").value;//明文
         var encrypted = getAesString(data,key); //密文
-        document.getElementById("data-out").innerHTML = encrypted;
+        document.getElementById("data-out").value = encrypted;
     }
 
     function getDAes(){//解密
         var encrypted = document.getElementById("data-ipt").value; //密文
         var key  =  document.getElementById("data-pwd").value;//明文
         var decryptedStr = getDAesString(encrypted,key);
-        document.getElementById("data-out").innerHTML = decryptedStr;
+        document.getElementById("data-out").value = decryptedStr;
     }
   </script>
   <div class="demo-wrap">
+      <br>----------------华丽的分割线--------------<br>
     输入文本:<br>
     <input type="text" id="data-ipt"/>
     <br/>
@@ -90,7 +91,8 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
     <button onclick="getDAes();">AES解密</button>
     <br/>
     加密/解密后的数据:
-    <p id = "data-out"></p>
+    <br/>
+    <input type="text" id="data-out"/>
 </div>
 
 </article>
