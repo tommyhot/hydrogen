@@ -93,10 +93,12 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
 					var successful = document.execCommand('copy');
 					// 移除选中的元素
 					window.getSelection().removeAllRanges();
+          alert("已复制好，可贴粘。");
 				}else{
 					var Url2=document.getElementById("data-out");//要复制文字的节点
 					Url2.select(); // 选择对象
 					document.execCommand("Copy"); // 执行浏览器复制命令
+          alert("已复制好，可贴粘。");
 				}
       }
     }
