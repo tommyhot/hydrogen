@@ -78,11 +78,27 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
         var decryptedStr = getDAesString(encrypted,key);
         document.getElementById("data-out").value = decryptedStr;
     }
-    function oCopy(obj){
-      var text = document.getElementById("data-out");
-      text.select(); // 选择对象
-      document.execCommand("Copy"); // 执行浏览器复制命令
-      alert("已复制好，可贴粘。");
+
+    function oCopy(){
+      {
+				if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {//区分iPhone设备
+					window.getSelection().removeAllRanges();//这段代码必须放在前面否则无效
+					var Url2=document.getElementById("data-out");//要复制文字的节点
+					var range = document.createRange();
+					// 选中需要复制的节点
+					range.selectNode(Url2);
+					// 执行选中元素
+					window.getSelection().addRange(range);
+					// 执行 copy 操作
+					var successful = document.execCommand('copy');
+					// 移除选中的元素
+					window.getSelection().removeAllRanges();
+				}else{
+					var Url2=document.getElementById("data-out");//要复制文字的节点
+					Url2.select(); // 选择对象
+					document.execCommand("Copy"); // 执行浏览器复制命令
+				}
+      }
     }
   </script>
   <div class="demo-wrap">
@@ -98,7 +114,8 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
     <br/>
     加密/解密后的数据:
     <br/>
-    <input onclick="oCopy(this)" type="text" id="data-out" style="width:310px;"/>
+    <input  id="data-out" type="text" style="width:310px;"/> 
+    <button onclick="oCopy();">拷贝</button>
 </div>
 
 </article>
