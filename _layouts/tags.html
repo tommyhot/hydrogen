@@ -78,6 +78,12 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
         var decryptedStr = getDAesString(encrypted,key);
         document.getElementById("data-out").value = decryptedStr;
     }
+    function oCopy(obj){
+      var text = document.getElementById("data-out");
+      text.select(); // 选择对象
+      document.execCommand("Copy"); // 执行浏览器复制命令
+      alert("已复制好，可贴粘。");
+    }
   </script>
   <div class="demo-wrap">
       <br>----------------华丽的分割线--------------<br>
@@ -92,7 +98,7 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
     <br/>
     加密/解密后的数据:
     <br/>
-    <input type="text" id="data-out" style="width:310px;"/>
+    <input onclick="oCopy(this)" type="text" id="data-out" style="width:310px;"/>
 </div>
 
 </article>
