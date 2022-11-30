@@ -2,7 +2,6 @@
 layout: post
 title: anaconda-python虚拟环境
 tags: python
-stickie: true
 ---
 
 

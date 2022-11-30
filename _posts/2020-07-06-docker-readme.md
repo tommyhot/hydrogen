@@ -2,7 +2,6 @@
 layout: post
 title: docker相关
 tags: docker
-stickie: true
 ---
 
 ### 从Dockerfile构建镜像

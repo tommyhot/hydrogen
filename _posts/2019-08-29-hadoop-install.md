@@ -2,7 +2,6 @@
 layout: post
 title: Hadoop-2.7.2安装教程!
 tags: 大数据 hadoop
-stickie: true
 ---
 
 

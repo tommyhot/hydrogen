@@ -2,7 +2,6 @@
 layout: post
 title: Mysql相关
 tags: mysql
-stickie: true
 ---
 
 
