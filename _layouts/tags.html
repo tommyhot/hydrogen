@@ -102,18 +102,28 @@ tagline: （ • ̀ω•́ ） 这里竟然是标签哎！
 				}
       }
     }
+
+    function clearInput() {
+      var input = document.getElementById("data-ipt")
+      input.value = ""
+    }
+    function clearPassword() {
+      var pwd = document.getElementById("data-pwd")
+      pwd.value = ""
+    }
+
   </script>
   <div class="demo-wrap">
       <br>----------------华丽的分割线--------------<br>
     输入文本:<br>
-    <input type="text" id="data-ipt"/>
+    <input type="text" id="data-ipt"/>&nbsp;<button onclick="clearInput();">清除</button>
     <br/>
     输入密码:<br>
-    <input type="password" id="data-pwd"/>
+    <input type="password" id="data-pwd"/>&nbsp;<button onclick="clearPassword();">清除</button>
     <br/>
-    <button onclick="getAES();">加密</button>
-    <button onclick="getDAes();">解密</button>
     <br/>
+    <button onclick="getAES();">加密</button> 
+    <button onclick="getDAes();">解密</button> 
     加密/解密后的数据:
     <br/>
     <input  id="data-out" type="text"/> 
