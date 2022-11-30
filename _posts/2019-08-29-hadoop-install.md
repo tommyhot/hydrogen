@@ -106,3 +106,5 @@ LD_PRELOAD=/lib64/libc-2.14.so ln -s /lib64/libc-2.14.so /lib64/libc.so.6
 
 ###
 	export HADOOP_ROOT_LOGGER=INFO,console
+
+	

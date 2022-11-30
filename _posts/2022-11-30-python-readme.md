@@ -15,14 +15,13 @@ stickie: true
 
 * 设置pypi镜像地址
 
-    `pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`
+`pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`
 
 ### 虚拟环境相关
 
 * pipenv
-
-    * 安装 `pip install pipenv`
-    * 使用 `pipenv shell`
-    * 指定python版本 `pipenv shell --python=3.8`
+1. 安装 `pip install pipenv`
+2. 使用 `pipenv shell`
+3. 指定python版本 `pipenv shell --python=3.8`
 
 * poerty

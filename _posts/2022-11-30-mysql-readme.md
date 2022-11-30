@@ -13,16 +13,15 @@ tags: mysql
 + 解压下到以下位置：F:\Program Files\mysql-8.0.26-winx64\bin
 
 + 启动mysql：
-
-    * 输入命令mysqld --initialize --console来初始化数据库，并记录随机生成的密码：
-    * 输入mysqld -install将mysql安装为Windows的服务：
-    * 启动mysql服务: net start mysql或sc start mysql
-    * 停止MySQL服务：net stop mysqld或sc stop mysqld或sc
-    * 删除MySQL服务：sc delete mysqld或mysqld -remove（需先停止服务）
-    * 输入mysql -u root -p来登陆数据库，并输入前面记录的临时密码
-    * 登陆成功后输入命令ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '********';
-    * FLUSH PRIVILEGES; 
-    * 并输入commit;提交：
+1. 输入命令mysqld --initialize --console来初始化数据库，并记录随机生成的密码：
+2. 输入mysqld -install将mysql安装为Windows的服务：
+3. 启动mysql服务: net start mysql或sc start mysql
+4. 停止MySQL服务：net stop mysqld或sc stop mysqld或sc
+5. 删除MySQL服务：sc delete mysqld或mysqld -remove（需先停止服务）
+6. 输入mysql -u root -p来登陆数据库，并输入前面记录的临时密码
+7. 登陆成功后输入命令ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '********';
+8. FLUSH PRIVILEGES; 
+9. 并输入commit;提交：
 
 
 
