@@ -5,10 +5,8 @@ tags: mysql
 stickie: true
 ---
 
-# MySql相关操作
 
-
-## windows下安装mysql
+### windows下安装mysql
 
 
 + 下载地址：[https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
@@ -29,7 +27,7 @@ stickie: true
 
 
 
-## 创建用户
+### 创建用户
 ```mysql
 create user 'alpha'@'%' IDENTIFIED WITH mysql_native_password BY '********';
 create database alpha;

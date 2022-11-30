@@ -5,20 +5,19 @@ tags: python
 stickie: true
 ---
 
-# Python语言相关
 
-## 安装python
+### 安装python
 
 * 从镜像地址下载 [https://registry.npmmirror.com/binary.html?path=python/](https://registry.npmmirror.com/binary.html?path=python/)
 
 
-## pip 相关
+### pip 相关
 
 * 设置pypi镜像地址
 
     `pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple`
 
-## 虚拟环境相关
+### 虚拟环境相关
 
 * pipenv
 

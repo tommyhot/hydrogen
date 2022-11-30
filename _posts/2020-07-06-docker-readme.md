@@ -5,8 +5,6 @@ tags: docker
 stickie: true
 ---
 
-# docker 使用指南
-
 ### 从Dockerfile构建镜像
 	docker build -t yhpds:1.0 .
 
