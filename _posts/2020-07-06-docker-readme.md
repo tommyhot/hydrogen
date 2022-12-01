@@ -4,6 +4,8 @@ title: docker相关
 tags: docker
 ---
 
+Welcome to Hydrogen!<br>If you saw this post, your blog has been successfully deployed.So enjoy the fun of writing now!
+
 ### 从Dockerfile构建镜像
 	docker build -t yhpds:1.0 .
 

@@ -1,9 +1,13 @@
 ---
 layout: post
-title: python语言相关
+title: python开发环境
 tags: python
 stickie: true
 ---
+
+
+这里记录的是Python下载、安装、环境配置等入门操作，包含pip包管理工具的使用，虚拟环境的创建，构建等等功能，快速搭建python环境。
+
 
 
 ### 安装python

@@ -5,6 +5,8 @@ tags: python
 ---
 
 
+Welcome to Hydrogen!<br>If you saw this post, your blog has been successfully deployed.So enjoy the fun of writing now!
+
 ```sh
 conda create -n python37 python=3.7
 source activate python37

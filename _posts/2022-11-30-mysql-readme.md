@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Mysql相关
+title: Mysql开发环境
 tags: mysql
+stickie: true
 ---
+
+Mysql相关的入门操作，如：windows下安装、启动、停止、删除服务，还有创建用户，修改密码，给用户赋权限等等。
+需要注意的是5.0和8.0版本的操作是有区别的，以下主要介绍8.0以上版本的操作。
 
 
 ### windows下安装mysql

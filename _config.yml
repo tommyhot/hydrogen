@@ -29,8 +29,10 @@ hydrogen-blog:
 #MathJax switch
 MathJax: false
 
+gems: [jekyll-paginate]
+
 #install emoji
-plugins:
+plugins_dir:
   - jemoji
   - jekyll-paginate
 
