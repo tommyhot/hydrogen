@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python开发环境
+title: Python开发环境
 tags: python
 stickie: true
 ---
