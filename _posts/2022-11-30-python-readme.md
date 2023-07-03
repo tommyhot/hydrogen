@@ -33,19 +33,19 @@ stickie: true
 
 ### python 模块加密(Cython)
 ```python
-	import os.path
-	import shutil
-	from setuptools import Extension, Distribution
-	from Cython.Build import cythonize, build_ext
+import os.path
+import shutil
+from setuptools import Extension, Distribution
+from Cython.Build import cythonize, build_ext
 
-	ext_modules = cythonize([Extension("xxx", ["xxx.py"])])
-	dist = Distribution({"ext_modules": ext_modules})
-	cmd = build_ext(dist)
-	cmd.ensure_finalized()
-	cmd.run()
+ext_modules = cythonize([Extension("xxx", ["xxx.py"])])
+dist = Distribution({"ext_modules": ext_modules})
+cmd = build_ext(dist)
+cmd.ensure_finalized()
+cmd.run()
 
-	for output in cmd.get_outputs():
-		relative_extension = os.path.relpath(output, cmd.build_lib)
-		shutil.copyfile(output, relative_extension)
+for output in cmd.get_outputs():
+	relative_extension = os.path.relpath(output, cmd.build_lib)
+	shutil.copyfile(output, relative_extension)
 
 ```
