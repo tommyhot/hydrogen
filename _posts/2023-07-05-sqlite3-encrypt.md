@@ -26,7 +26,6 @@ gcc sqleet.c shell.c -o sqleet -lpthread -ldl
 
 # Windows
 gcc sqleet.c shell.c -o sqleet
-
 ```
 
 
@@ -37,6 +36,7 @@ gcc -shared -Wall  -fPIC sqleet.c -lc -lpthread -ldl -o libsqlite3.so
 
 # Windows
 gcc -shared -Wall  -fPIC sqleet.c -lpthread -o sqlite3.dll
+# 在windows里可以使用生成的sqlite3.dll文件替换python lib里的sqlite3.dll,需要注意备份
 ```
 
 ### 使用sqlite3
