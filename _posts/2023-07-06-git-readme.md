@@ -74,15 +74,15 @@ git submodule update --init --recursive
 git submodule update --recursive --remote
 
 ### 设置CRLF和LF
-提交时转换为LF，检出时转换为CRLF
+* 提交时转换为LF，检出时转换为CRLF
 git config --global core.autocrlf true
-提交时转换为LF，检出时不转换
+* 提交时转换为LF，检出时不转换
 git config --global core.autocrlf input
-提交检出均不转换
+* 提交检出均不转换
 git config --global core.autocrlf false
-拒绝提交包含混合换行符的文件
+* 拒绝提交包含混合换行符的文件
 git config --global core.safecrlf true
-允许提交包含混合换行符的文件
+* 允许提交包含混合换行符的文件
 git config --global core.safecrlf false
-提交包含混合换行符的文件时给出警告
+* 提交包含混合换行符的文件时给出警告
 git config --global core.safecrlf warn

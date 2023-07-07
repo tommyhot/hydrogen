@@ -24,5 +24,11 @@ docker run it yhpds:1.1 运行entrypoint
 
 docker logs -f  --tail=100 97f74a979d70 
 
-# windows 删除<none>的镜像
+# docker 删除<none>的镜像
+unix：
+
 docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+
+windows:
+
+for /f "tokens=*" %x in ('docker images -f "dangling=true" -q') do docker rmi  %x
