@@ -14,7 +14,7 @@ permalink: /links.html
 {% endfor %}
 
 [返回主页](http://tommyhot.cn)
-
+<div>
   <script src="/assets/js/aes.js"></script>
   <script src="/assets/js/mode-ecb.js"></script>
   <script>
@@ -107,7 +107,7 @@ permalink: /links.html
     <input  id="data-out" type="text"/> 
     <button onclick="oCopy();">拷贝</button>
 </div>
-
+</div>
 <hr/>
 
   {% if site.data.social.valine_comment.enable  == true %}
