@@ -14,6 +14,14 @@ stickie: true
 
 * 从镜像地址下载 [https://registry.npmmirror.com/binary.html?path=python/](https://registry.npmmirror.com/binary.html?path=python/)
 
+* 源码编译
+
+```shell
+sudo yum install -y sqlite sqlite-devel
+tar -xf Python-3.12.4.tar.xz
+./configure --enable-optimizations --prefix=/runtime/python3.12
+make install
+```
 
 ### pip 相关
 
