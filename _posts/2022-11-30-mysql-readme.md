@@ -37,3 +37,13 @@ grant all privileges on alpha.* to 'alpha'@'%';
 flush privileges; 
 ```
 
+### MySQL备份与恢复
+
+```shell
+# 备份数据库
+mysqldump -udbuser -pdbpassword dbname > dbname.sql
+
+# 恢复数据库
+mysql -udbuser -pdbpassword dbname < dbname.sql
+
+```
